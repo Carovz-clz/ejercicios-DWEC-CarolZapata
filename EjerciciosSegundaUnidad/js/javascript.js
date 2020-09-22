@@ -35,3 +35,14 @@ function comprobarOperadores(){
     var7 = !true;
     alert('var7: '+var7);
 }
+
+function diaMesAnio(){
+    var dia, mes, anio;
+
+    dia = prompt('Introduzca el día: ');
+    mes = prompt('Introduzca el mes: ');
+    anio = prompt('Introduzca el anio: ');
+
+    alert('Hoy es '+dia+' de '+mes+' de '+anio+'.');
+
+}
