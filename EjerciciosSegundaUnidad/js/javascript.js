@@ -106,3 +106,22 @@ function ejercicio7(num){
     console.log("Valor de soyConstante: "+soyConstante);
     console.log("Valor de soyDelIf: "+soyDelIf); //Error. Ámbito de la variable solo en el if, donde se declaró.
 }
+
+function ejercicio8(){
+    let texto = prompt("Escribe un texto: ");
+    alert('¡'+texto+'!');
+}
+
+function ejercicio9(){
+    for(let i = 1; i<=35; i+=2){
+        console.log(i);
+    }
+}
+
+function ejercicio9_2(){
+    let i = 1;
+    while(i<=35){
+        console.log(i);
+        i+=2;
+    }
+}
