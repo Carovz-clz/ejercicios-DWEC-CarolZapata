@@ -46,3 +46,44 @@ function diaMesAnio(){
     alert('Hoy es '+dia+' de '+mes+' de '+anio+'.');
 
 }
+
+function factorialRecursivo (n) { 
+	if (n == 0){ 
+		return 1; 
+	}
+	return n * factorialRecursivo (n-1); 
+}
+
+function ejercicio6(){
+    let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+    for(i = 0; i < meses.length; i++){
+        console.log(meses[i]);
+    }
+
+    let num = prompt('Introduzca un número para calcular el factorial: ');
+    num = parseInt(num, 10);
+    console.log(num);
+    alert('El factorial es: '+factorialRecursivo(num));
+
+    let edad = prompt("Introducce tu edad: ");
+    edad = parseInt(edad, 10);
+    console.log(edad);
+
+    if(edad < 7){
+        alert('Recomendación: Patrulla canina.');
+    }else if ((edad >= 7) && (edad <= 13)){
+        alert('Recomendación: Alexa y Katie.');
+    }else if ((edad >= 14) && (edad <= 18)){
+        alert('Recomendación: Anne with an E.');
+    }else if((edad >= 19) && (edad <= 35)){
+        alert('Recomendación: Stranger Things.');
+    }else{
+        alert('Recomendación: Sherlock.');
+    }
+
+    let n;
+    do{
+        n = prompt("Introducce un número ");
+    }while( (n>=45) && (n<=72));
+}
