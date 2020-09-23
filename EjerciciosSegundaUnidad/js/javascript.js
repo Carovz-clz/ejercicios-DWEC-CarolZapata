@@ -87,3 +87,22 @@ function ejercicio6(){
         n = prompt("Introducce un número ");
     }while( (n>=45) && (n<=72));
 }
+
+function ejercicio7(num){
+    var soyDeLaFuncion = 2;
+    const soyConstante = 8; //No entiendo el error
+
+    if(num == 1){
+        let soyDelIf = 4;
+        soyDeLaFuncion = 0;
+    }else{
+        //const soyConstante = 8;
+        soyConstante = "Constante modificada."; //No entiendo el error
+    }
+
+    //soyConstante = "Constante modificada.";
+
+    console.log("Valor de soyDeLaFunción: "+soyDeLaFuncion);
+    console.log("Valor de soyConstante: "+soyConstante);
+    console.log("Valor de soyDelIf: "+soyDelIf); //Error. Ámbito de la variable solo en el if, donde se declaró.
+}
